@@ -1206,11 +1206,25 @@ nav {
 
     .section-title {
         font-size: 1.8rem;
+        display: block;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .section-title::after {
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .badge {
         font-size: 0.65rem;
         padding: 4px 10px;
+        display: block;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     /* Hero */
@@ -1295,10 +1309,18 @@ nav {
         height: 14px;
     }
 
+    .subsection-title {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 1.4rem;
+    }
+
     /* Skills */
     .skill-cards {
         grid-template-columns: 1fr;
         gap: 14px;
+        max-width: 360px;
+        margin: 0 auto;
     }
 
     .skill-card {
@@ -1328,6 +1350,8 @@ nav {
     .soft-skills-grid {
         grid-template-columns: 1fr;
         gap: 12px;
+        max-width: 360px;
+        margin: 0 auto;
     }
 
     .soft-skill-card {
@@ -1374,6 +1398,8 @@ nav {
     .domain-cards {
         flex-direction: column;
         gap: 10px;
+        max-width: 360px;
+        margin: 0 auto;
     }
 
     .domain-card {
@@ -1390,6 +1416,8 @@ nav {
     .contact-cards {
         grid-template-columns: 1fr;
         gap: 12px;
+        max-width: 360px;
+        margin: 0 auto;
     }
 
     .contact-box {
@@ -1428,6 +1456,8 @@ nav {
     .thank-you-boxes {
         grid-template-columns: 1fr;
         gap: 12px;
+        max-width: 360px;
+        margin: 0 auto;
     }
 
     .action-box {

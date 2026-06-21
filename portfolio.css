@@ -1460,6 +1460,14 @@ nav {
     /* Thank You */
     .thank-you-content .section-title {
         font-size: 1.8rem;
+        border-top: none;
+        padding-top: 0;
+    }
+
+    .thank-you-content .section-title::after {
+        width: 50px;
+        height: 2px;
+        margin: 10px auto 0;
     }
 
     .thank-you-desc {

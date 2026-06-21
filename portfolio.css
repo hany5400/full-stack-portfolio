@@ -1205,7 +1205,7 @@ nav {
     }
 
     .section-title {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         display: block;
         width: fit-content;
         margin-left: auto;
@@ -1275,26 +1275,26 @@ nav {
     /* Projects */
     .project-item {
         min-height: auto;
-        max-width: 480px;
+        max-width: 360px;
         margin-left: auto;
         margin-right: auto;
     }
 
     .project-info {
-        padding: 20px;
+        padding: 16px;
     }
 
     .project-info h3 {
-        font-size: 1.15rem;
+        font-size: 1.05rem;
         flex-wrap: wrap;
     }
 
     .project-info p {
-        font-size: 0.85rem;
+        font-size: 0.8rem;
     }
 
     .project-media {
-        padding: 16px;
+        padding: 12px;
     }
 
     .browser-frame .media-content {
@@ -1380,26 +1380,26 @@ nav {
 
     /* Education */
     .education-timeline {
-        max-width: 480px;
+        max-width: 380px;
     }
 
     .edu-item {
-        padding: 14px;
-        gap: 12px;
+        padding: 12px;
+        gap: 10px;
     }
 
     .edu-icon {
-        width: 40px;
-        height: 40px;
-        font-size: 1rem;
-    }
-
-    .edu-details h3 {
+        width: 36px;
+        height: 36px;
         font-size: 0.95rem;
     }
 
+    .edu-details h3 {
+        font-size: 0.88rem;
+    }
+
     .edu-details p {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
     }
 
     /* Domain cards */
@@ -1521,7 +1521,7 @@ nav {
     }
 
     .section-title {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         margin-bottom: 18px;
     }
 
@@ -1548,7 +1548,7 @@ nav {
     }
 
     .project-item {
-        max-width: 360px;
+        max-width: 300px;
     }
 
     .thank-you-desc {
@@ -1608,16 +1608,20 @@ nav {
         font-size: 1rem;
     }
 
+    .education-timeline {
+        max-width: 320px;
+    }
+
     .edu-item {
         padding: 10px;
-        gap: 10px;
-        max-width: 360px;
+        gap: 8px;
+        max-width: 320px;
     }
 
     .edu-icon {
-        width: 36px;
-        height: 36px;
-        font-size: 0.95rem;
+        width: 32px;
+        height: 32px;
+        font-size: 0.85rem;
     }
 
     .contact-box {

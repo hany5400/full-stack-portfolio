@@ -1578,6 +1578,13 @@ nav {
 
     .thank-you-content .section-title {
         font-size: 1.7rem;
+        border-top: none;
+        padding-top: 0;
+    }
+
+    .thank-you-content .section-title::after {
+        width: 40px;
+        height: 2px;
     }
 
     /* Compact cards */

@@ -1248,16 +1248,6 @@ nav {
         font-size: 0.95rem;
     }
 
-    .domain-cards {
-        flex-direction: column;
-        gap: 12px;
-    }
-
-    .domain-card {
-        padding: 16px 20px;
-        min-width: auto;
-    }
-
     /* Projects */
     .project-item {
         min-height: auto;
@@ -1299,41 +1289,146 @@ nav {
     /* Skills */
     .skill-cards {
         grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .skill-card {
+        padding: 20px 18px;
+    }
+
+    .skill-card-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
+        margin-bottom: 12px;
+    }
+
+    .skill-card h4 {
+        font-size: 1.05rem;
+        margin-bottom: 10px;
+    }
+
+    .skill-tag {
+        font-size: 0.72rem;
+        padding: 4px 10px;
     }
 
     .soft-skills-grid {
         grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .soft-skill-card {
+        padding: 20px 16px;
+    }
+
+    .soft-skill-icon {
+        width: 44px;
+        height: 44px;
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+
+    .soft-skill-card h4 {
+        font-size: 0.95rem;
+        margin-bottom: 4px;
+    }
+
+    .soft-skill-card p {
+        font-size: 0.78rem;
+    }
+
+    /* Education */
+    .edu-item {
+        padding: 18px;
+        gap: 14px;
+    }
+
+    .edu-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 1.2rem;
+    }
+
+    .edu-details h3 {
+        font-size: 1rem;
+    }
+
+    .edu-details p {
+        font-size: 0.85rem;
+    }
+
+    /* Domain cards */
+    .domain-cards {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .domain-card {
+        padding: 14px 18px;
+        min-width: auto;
+        gap: 8px;
+    }
+
+    .domain-card i {
+        font-size: 1.5rem;
     }
 
     /* Contact */
     .contact-cards {
         grid-template-columns: 1fr;
+        gap: 12px;
     }
 
     .contact-box {
-        padding: 20px;
+        padding: 18px;
+    }
+
+    .contact-box-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .contact-box-header {
+        font-size: 1rem;
+        margin-bottom: 4px;
+    }
+
+    .contact-box-content {
+        font-size: 0.8rem;
     }
 
     .illustration {
-        max-width: 280px;
+        max-width: 260px;
     }
 
     /* Thank You */
     .thank-you-content .section-title {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .thank-you-desc {
-        font-size: 0.95rem;
+        font-size: 0.9rem;
     }
 
     .thank-you-boxes {
         grid-template-columns: 1fr;
-        gap: 14px;
+        gap: 12px;
     }
 
     .action-box {
-        padding: 24px 16px;
+        padding: 20px 16px;
+        gap: 10px;
+    }
+
+    .action-box i {
+        font-size: 1.6rem;
+    }
+
+    .action-box span {
+        font-size: 1rem;
     }
 }
 
@@ -1392,5 +1487,45 @@ nav {
 
     .thank-you-content .section-title {
         font-size: 1.7rem;
+    }
+
+    /* Compact cards */
+    .skill-card {
+        padding: 16px 14px;
+    }
+
+    .skill-card-icon {
+        width: 36px;
+        height: 36px;
+        font-size: 1rem;
+    }
+
+    .soft-skill-card {
+        padding: 16px 14px;
+    }
+
+    .soft-skill-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    .edu-item {
+        padding: 14px;
+        gap: 12px;
+    }
+
+    .edu-icon {
+        width: 42px;
+        height: 42px;
+        font-size: 1.1rem;
+    }
+
+    .contact-box {
+        padding: 16px;
+    }
+
+    .action-box {
+        padding: 18px 14px;
     }
 }

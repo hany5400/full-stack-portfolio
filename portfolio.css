@@ -1268,12 +1268,16 @@ nav {
     }
 
     .about-text p {
-        font-size: 0.95rem;
+        font-size: 0.82rem;
+        max-width: 400px;
     }
 
     /* Projects */
     .project-item {
         min-height: auto;
+        max-width: 480px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .project-info {
@@ -1286,7 +1290,7 @@ nav {
     }
 
     .project-info p {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
     }
 
     .project-media {
@@ -1371,27 +1375,31 @@ nav {
     }
 
     .soft-skill-card p {
-        font-size: 0.78rem;
+        font-size: 0.72rem;
     }
 
     /* Education */
+    .education-timeline {
+        max-width: 480px;
+    }
+
     .edu-item {
-        padding: 18px;
-        gap: 14px;
+        padding: 14px;
+        gap: 12px;
     }
 
     .edu-icon {
-        width: 48px;
-        height: 48px;
-        font-size: 1.2rem;
-    }
-
-    .edu-details h3 {
+        width: 40px;
+        height: 40px;
         font-size: 1rem;
     }
 
+    .edu-details h3 {
+        font-size: 0.95rem;
+    }
+
     .edu-details p {
-        font-size: 0.85rem;
+        font-size: 0.8rem;
     }
 
     /* Domain cards */
@@ -1413,6 +1421,11 @@ nav {
     }
 
     /* Contact */
+    .contact-desc {
+        font-size: 0.85rem;
+        max-width: 400px;
+    }
+
     .contact-cards {
         grid-template-columns: 1fr;
         gap: 12px;
@@ -1450,7 +1463,8 @@ nav {
     }
 
     .thank-you-desc {
-        font-size: 0.9rem;
+        font-size: 0.88rem;
+        max-width: 380px;
     }
 
     .thank-you-boxes {
@@ -1472,12 +1486,30 @@ nav {
     .action-box span {
         font-size: 1rem;
     }
+
+    .thank-you-btn {
+        margin-top: 20px;
+    }
 }
 
 /* Small phones */
 @media (max-width: 480px) {
+    p {
+        font-size: 0.8rem;
+    }
+
     .section {
         padding: 30px 0;
+    }
+
+    .about-text p {
+        font-size: 0.78rem;
+        max-width: 320px;
+    }
+
+    .contact-desc {
+        font-size: 0.8rem;
+        max-width: 320px;
     }
 
     .section-title {
@@ -1505,6 +1537,15 @@ nav {
 
     .project-info h3 {
         font-size: 1.05rem;
+    }
+
+    .project-item {
+        max-width: 360px;
+    }
+
+    .thank-you-desc {
+        font-size: 0.82rem;
+        max-width: 300px;
     }
 
     .btn {
@@ -1553,14 +1594,15 @@ nav {
     }
 
     .edu-item {
-        padding: 14px;
-        gap: 12px;
+        padding: 10px;
+        gap: 10px;
+        max-width: 360px;
     }
 
     .edu-icon {
-        width: 42px;
-        height: 42px;
-        font-size: 1.1rem;
+        width: 36px;
+        height: 36px;
+        font-size: 0.95rem;
     }
 
     .contact-box {
@@ -1569,5 +1611,9 @@ nav {
 
     .action-box {
         padding: 18px 14px;
+    }
+
+    .thank-you-btn {
+        margin-top: 20px;
     }
 }

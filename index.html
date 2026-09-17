@@ -45,32 +45,45 @@
         <section id="hero" class="container section">
             <div class="hero-content">
                 <div class="hero-text">
-                    <span class="badge">WELCOME TO MY PORTFOLIO</span>
-                    <h1>Hi, I'm<br>Ahmed Abdelgawad</h1>
-                    <h2>Software Developer</h2>
-                    <p class="tagline">Turning ideas into reliable, user-centered software products.</p>
-                    <div class="hero-buttons">
+                    <span class="badge hero-reveal" style="--reveal-delay: 0.1s">WELCOME TO MY PORTFOLIO</span>
+                    <h1 class="hero-reveal" style="--reveal-delay: 0.25s">Hi, I'm<br>Ahmed Abdelgawad</h1>
+                    <h2 class="hero-reveal" style="--reveal-delay: 0.4s">Software Developer</h2>
+                    <p class="tagline hero-reveal" style="--reveal-delay: 0.55s">Turning ideas into reliable, user-centered software products.</p>
+                    <div class="hero-buttons hero-reveal" style="--reveal-delay: 0.7s">
                         <a href="#projects" class="btn"><i class="fas fa-folder-open"></i> View My Work</a>
                         <a href="#contact" class="btn btn-outline"><i class="fas fa-envelope"></i> Contact Me</a>
                     </div>
                 </div>
                 <div class="hero-image">
                     <div class="hero-image-wrapper">
-                        <img src="./images/me badla.jpeg" alt="Ahmed Abdelgawad" />
+                        <div class="hero-image-inner">
+                            <img src="./images/me badla.jpeg" alt="Ahmed Abdelgawad" />
+                        </div>
+                        <!-- Orbit ring -->
+                        <div class="orbit-ring">
+                            <div class="orbit-dot"></div>
+                            <div class="orbit-dot"></div>
+                            <div class="orbit-dot"></div>
+                            <div class="orbit-dot"></div>
+                        </div>
+                        <!-- Floating tech icons -->
+                        <div class="hero-tech-icons">
+                            <div class="tech-icon ti-1"><i class="fas fa-laptop-code"></i></div>
+                            <div class="tech-icon ti-2"><i class="fas fa-code"></i></div>
+                            <div class="tech-icon ti-3"><i class="fas fa-database"></i></div>
+                            <div class="tech-icon ti-4"><i class="fas fa-terminal"></i></div>
+                            <div class="tech-icon ti-5"><i class="fab fa-github"></i></div>
+                            <div class="tech-icon ti-6"><i class="fas fa-globe"></i></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- ========== ABOUT ME (Who I Am) ========== -->
-        <section id="about" class="container section">
-            <div class="about-grid">
-                <div class="about-image-wrapper">
-                    <div class="about-image-frame">
-                        <img src="./images/me.jpeg" alt="Ahmed Abdelgawad Profile" class="profile-pic" />
-                    </div>
-                </div>
-                <div class="about-text">
+        <section id="about" class="container section reveal-section">
+            <div class="about-grid about-grid-no-image">
+                <div class="about-text reveal" style="--reveal-delay: 0s">
                     <span class="badge">ABOUT ME</span>
                     <h2 class="section-title">Who I Am</h2>
                     <p>
@@ -82,22 +95,27 @@
                         I am passionate about building clean, maintainable, and user-focused software solutions that
                         deliver real value to users and businesses.
                     </p>
+                    <div class="about-tech-tags">
+                        <span class="tech-tag-item"><i class="fas fa-code"></i> Clean Code</span>
+                        <span class="tech-tag-item"><i class="fas fa-layer-group"></i> Full Stack</span>
+                        <span class="tech-tag-item"><i class="fas fa-mobile-alt"></i> Cross-Platform</span>
+                    </div>
                 </div>
             </div>
             <div class="domain-cards">
-                <div class="domain-card">
+                <div class="domain-card reveal" style="--reveal-delay: 0s">
                     <i class="fas fa-laptop-code"></i>
                     <span>Front-End</span>
                 </div>
-                <div class="domain-card">
+                <div class="domain-card reveal" style="--reveal-delay: 0.1s">
                     <i class="fas fa-server"></i>
                     <span>Back-End</span>
                 </div>
-                <div class="domain-card">
+                <div class="domain-card reveal" style="--reveal-delay: 0.2s">
                     <i class="fas fa-mobile-alt"></i>
                     <span>Mobile</span>
                 </div>
-                <div class="domain-card">
+                <div class="domain-card reveal" style="--reveal-delay: 0.3s">
                     <i class="fas fa-database"></i>
                     <span>Database</span>
                 </div>
@@ -105,17 +123,17 @@
         </section>
 
         <!-- ========== EDUCATION ========== -->
-        <section id="education" class="container section">
-            <h2 class="section-title center">Education & Academic Background</h2>
+        <section id="education" class="container section reveal-section">
+            <h2 class="section-title center reveal">Education & Academic Background</h2>
             <div class="education-timeline">
-                <div class="edu-item">
+                <div class="edu-item reveal" style="--reveal-delay: 0s">
                     <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
                     <div class="edu-details">
                         <h3>Arab Academy for Science, Technology & Maritime Transport (AASTMT)</h3>
                         <p>Business Information System | 2022 - 2026</p>
                     </div>
                 </div>
-                <div class="edu-item">
+                <div class="edu-item reveal" style="--reveal-delay: 0.15s">
                     <div class="edu-icon"><i class="fas fa-school"></i></div>
                     <div class="edu-details">
                         <h3>St. George Secondary School</h3>
@@ -126,9 +144,9 @@
         </section>
 
         <!-- ========== SKILLS ========== -->
-        <section id="skills" class="container section">
-            <span class="badge">SKILLS & TOOLS</span>
-            <h2 class="section-title">Technical & Professional Skills</h2>
+        <section id="skills" class="container section reveal-section">
+            <span class="badge reveal">SKILLS & TOOLS</span>
+            <h2 class="section-title reveal" style="--reveal-delay: 0.1s">Technical & Professional Skills</h2>
 
             <div class="skills-grid">
                 <!-- Technical Skills -->
@@ -233,13 +251,13 @@
         </section>
 
         <!-- ========== PROJECTS ========== -->
-        <section id="projects" class="container section">
-            <span class="badge">SHOWCASE</span>
-            <h2 class="section-title">My Work</h2>
+        <section id="projects" class="container section reveal-section">
+            <span class="badge reveal">SHOWCASE</span>
+            <h2 class="section-title reveal" style="--reveal-delay: 0.1s">My Work</h2>
 
             <div class="projects-list">
                 <!-- Project 1 -->
-                <div class="project-item">
+                <div class="project-item reveal" style="--reveal-delay: 0s">
                     <div class="project-media">
                         <!-- Admin Dashboard in Browser Frame -->
                         <div class="browser-frame">
@@ -267,7 +285,7 @@
                 </div>
 
                 <!-- Project 2 -->
-                <div class="project-item">
+                <div class="project-item reveal" style="--reveal-delay: 0.1s">
                     <div class="project-media">
                         <div class="browser-frame">
                             <div class="browser-header"><span></span><span></span><span></span></div>
@@ -297,7 +315,7 @@
                 </div>
 
                 <!-- Project 3 -->
-                <div class="project-item">
+                <div class="project-item reveal" style="--reveal-delay: 0.2s">
                     <div class="project-media">
                         <div class="browser-frame">
                             <div class="browser-header"><span></span><span></span><span></span></div>
@@ -327,7 +345,7 @@
                 </div>
 
                 <!-- Project 4 -->
-                <div class="project-item">
+                <div class="project-item reveal" style="--reveal-delay: 0.3s">
                     <div class="project-media">
                         <div class="browser-frame">
                             <div class="browser-header"><span></span><span></span><span></span></div>
@@ -353,7 +371,7 @@
                 </div>
 
                 <!-- Project 5 -->
-                <div class="project-item">
+                <div class="project-item reveal" style="--reveal-delay: 0.4s">
                     <div class="project-media">
                         <div class="browser-frame">
                             <div class="browser-header"><span></span><span></span><span></span></div>
@@ -380,40 +398,40 @@
         </section>
 
         <!-- ========== CONTACT ========== -->
-        <section id="contact" class="container section">
+        <section id="contact" class="container section reveal-section">
             <div class="split-section">
                 <div class="split-text">
-                    <span class="badge">GET IN TOUCH</span>
-                    <h2 class="section-title">Let's Connect</h2>
+                    <span class="badge reveal">GET IN TOUCH</span>
+                    <h2 class="section-title reveal" style="--reveal-delay: 0.1s">Let's Connect</h2>
                     <p class="contact-desc">
                         I'm actively seeking opportunities to contribute to innovative software teams. Whether you're
                         looking for a full-stack developer, a mobile app specialist, or a problem solver who ships
                         quality code — I'd love to talk.
                     </p>
                     <div class="contact-cards">
-                        <a href="mailto:ahmedmohamedhany1234567@gmail.com" class="contact-box">
+                        <a href="mailto:ahmedmohamedhany1234567@gmail.com" class="contact-box reveal" style="--reveal-delay: 0s">
                             <div class="contact-box-icon">
                                 <i class="fas fa-envelope"></i>
                             </div>
                             <div class="contact-box-header">Email</div>
                             <div class="contact-box-content">ahmedmohamedhany1234567@gmail.com</div>
                         </a>
-                        <a href="tel:+201282664850" class="contact-box">
+                        <a href="https://wa.me/201282664850" target="_blank" class="contact-box reveal" style="--reveal-delay: 0.1s">
                             <div class="contact-box-icon">
                                 <i class="fab fa-whatsapp"></i>
                             </div>
-                            <div class="contact-box-header">Phone</div>
+                            <div class="contact-box-header">WhatsApp</div>
                             <div class="contact-box-content">+201282664850</div>
                         </a>
                         <a href="https://www.linkedin.com/in/ahmed-abdelgawad-1abab8329" target="_blank"
-                            class="contact-box">
+                            class="contact-box reveal" style="--reveal-delay: 0.2s">
                             <div class="contact-box-icon">
                                 <i class="fab fa-linkedin"></i>
                             </div>
                             <div class="contact-box-header">LinkedIn</div>
                             <div class="contact-box-content">Ahmed Abdelgawad</div>
                         </a>
-                        <a href="https://github.com/hany5400" target="_blank" class="contact-box">
+                        <a href="https://github.com/hany5400" target="_blank" class="contact-box reveal" style="--reveal-delay: 0.3s">
                             <div class="contact-box-icon">
                                 <i class="fab fa-github"></i>
                             </div>
@@ -422,36 +440,33 @@
                         </a>
                     </div>
                 </div>
-                <div class="split-image right-image">
-                    <img src="./images/cyber_hand.png" alt="Cybernetic Hand Illustration" class="illustration" />
-                </div>
             </div>
         </section>
 
         <!-- ========== THANK YOU ========== -->
-        <section id="thank-you" class="container section">
+        <section id="thank-you" class="container section reveal-section">
             <div class="thank-you-content">
-                <span class="badge">LET'S WORK TOGETHER</span>
-                <h2 class="section-title large-title">Thank You</h2>
-                <p class="thank-you-desc">
+                <span class="badge reveal">LET'S WORK TOGETHER</span>
+                <h2 class="section-title large-title reveal" style="--reveal-delay: 0.1s">Thank You</h2>
+                <p class="thank-you-desc reveal" style="--reveal-delay: 0.2s">
                     Your goals are my priority — as a Full Stack Developer, I'm here to deliver solutions that truly
                     work for you.
                 </p>
                 <div class="thank-you-boxes">
-                    <div class="action-box">
+                    <div class="action-box reveal" style="--reveal-delay: 0s">
                         <i class="fas fa-palette"></i>
                         <span>Design</span>
                     </div>
-                    <div class="action-box">
+                    <div class="action-box reveal" style="--reveal-delay: 0.1s">
                         <i class="fas fa-code"></i>
                         <span>Develop</span>
                     </div>
-                    <div class="action-box">
+                    <div class="action-box reveal" style="--reveal-delay: 0.2s">
                         <i class="fas fa-rocket"></i>
                         <span>Deploy</span>
                     </div>
                 </div>
-                <a href="#contact" class="btn thank-you-btn"><i class="fas fa-paper-plane"></i> Get In Touch</a>
+                <a href="#contact" class="btn thank-you-btn reveal" style="--reveal-delay: 0.3s"><i class="fas fa-paper-plane"></i> Get In Touch</a>
             </div>
         </section>
 
@@ -493,6 +508,56 @@
                 }
             });
         });
+
+        // ========== SCROLL REVEAL (Intersection Observer) ==========
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        if (!prefersReducedMotion) {
+            const revealElements = document.querySelectorAll('.reveal, .reveal-section');
+
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        revealObserver.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -20px 0px'
+            });
+
+            revealElements.forEach(el => revealObserver.observe(el));
+
+            // Fallback: immediately reveal elements already in viewport on load
+            requestAnimationFrame(() => {
+                revealElements.forEach(el => {
+                    const rect = el.getBoundingClientRect();
+                    if (rect.top < window.innerHeight && rect.bottom > 0) {
+                        el.classList.add('visible');
+                        revealObserver.unobserve(el);
+                    }
+                });
+            });
+
+            // Second fallback after short delay for slow renders
+            setTimeout(() => {
+                revealElements.forEach(el => {
+                    if (!el.classList.contains('visible')) {
+                        const rect = el.getBoundingClientRect();
+                        if (rect.top < window.innerHeight && rect.bottom > 0) {
+                            el.classList.add('visible');
+                            revealObserver.unobserve(el);
+                        }
+                    }
+                });
+            }, 300);
+        } else {
+            // If reduced motion is preferred, show everything immediately
+            document.querySelectorAll('.reveal, .reveal-section').forEach(el => {
+                el.classList.add('visible');
+            });
+        }
     </script>
 </body>
 

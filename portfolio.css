@@ -65,6 +65,10 @@ body {
     padding: 80px 0;
 }
 
+#about {
+    padding-top: 30px;
+}
+
 /* Typography */
 h1,
 h2,
@@ -376,7 +380,7 @@ nav {
     text-align: center;
     min-width: 150px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -390,16 +394,7 @@ nav {
     margin-bottom: 5px;
 }
 
-.domain-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
-    background: var(--color-primary);
-    color: var(--color-white);
-}
 
-.domain-card:hover i {
-    color: var(--color-white);
-}
 
 /* ========== EDUCATION ========== */
 .education-timeline {
@@ -683,17 +678,41 @@ nav {
     animation-delay: 1.65s;
 }
 
-/* Gentle float - only ti-1 and ti-4 */
+/* Gentle float - all icons */
 .tech-icon.ti-1 {
     animation: techIconAppear 0.5s cubic-bezier(0.23, 1, 0.32, 1) both,
         floatIcon 4s ease-in-out infinite;
     animation-delay: 0.9s, 1.4s;
 }
 
+.tech-icon.ti-2 {
+    animation: techIconAppear 0.5s cubic-bezier(0.23, 1, 0.32, 1) both,
+        floatIcon 3.5s ease-in-out infinite;
+    animation-delay: 1.05s, 1.55s;
+}
+
+.tech-icon.ti-3 {
+    animation: techIconAppear 0.5s cubic-bezier(0.23, 1, 0.32, 1) both,
+        floatIcon 5s ease-in-out infinite;
+    animation-delay: 1.2s, 1.7s;
+}
+
 .tech-icon.ti-4 {
     animation: techIconAppear 0.5s cubic-bezier(0.23, 1, 0.32, 1) both,
         floatIcon 4.5s ease-in-out infinite;
     animation-delay: 1.35s, 1.85s;
+}
+
+.tech-icon.ti-5 {
+    animation: techIconAppear 0.5s cubic-bezier(0.23, 1, 0.32, 1) both,
+        floatIcon 3.8s ease-in-out infinite;
+    animation-delay: 1.5s, 2.0s;
+}
+
+.tech-icon.ti-6 {
+    animation: techIconAppear 0.5s cubic-bezier(0.23, 1, 0.32, 1) both,
+        floatIcon 4.2s ease-in-out infinite;
+    animation-delay: 1.65s, 2.15s;
 }
 
 /* ========== SCROLL REVEAL ========== */
@@ -1001,6 +1020,27 @@ nav {
     vertical-align: middle;
 }
 
+.project-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-family: var(--font-sans);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.freelance-badge {
+    background: rgba(76, 26, 38, 0.08);
+    color: var(--color-primary);
+    border: 1px solid rgba(76, 26, 38, 0.25);
+    width: fit-content;
+}
+
 .project-info p {
     color: #64748b;
     line-height: 1.7;
@@ -1176,6 +1216,24 @@ nav {
     transform: translateY(-10px);
 }
 
+.contact-header {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-header .section-title {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-header .section-title::after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .contact-desc {
     margin-bottom: 35px;
     font-size: 1.1rem;
@@ -1194,18 +1252,12 @@ nav {
     color: var(--color-secondary);
     padding: 24px;
     border-radius: 12px;
-    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
     display: block;
     border: 1px solid rgba(0, 0, 0, 0.04);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
 }
 
-.contact-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
-    background: var(--color-primary);
-    color: var(--color-white);
-}
 
 .contact-box-icon {
     width: 48px;
@@ -1221,9 +1273,6 @@ nav {
     transition: all 0.3s ease;
 }
 
-.contact-box:hover .contact-box-icon {
-    background: rgba(255, 255, 255, 0.2);
-}
 
 .contact-box-header {
     font-family: var(--font-serif);
@@ -1302,7 +1351,7 @@ nav {
     font-size: 1.1rem;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     border: 1px solid rgba(0, 0, 0, 0.04);
-    transition: all 0.3s ease;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1311,39 +1360,19 @@ nav {
     overflow: hidden;
 }
 
-.action-box::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
 
-.action-box:hover::before {
-    opacity: 1;
-}
 
 .action-box i {
     font-size: 2rem;
     color: var(--color-primary);
-    transition: transform 0.3s ease;
-}
-
-.action-box:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
-    background: var(--color-primary);
-    color: var(--color-white);
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .action-box:hover i {
-    color: var(--color-white);
-    transform: scale(1.15);
+    transform: scale(1.25) translateY(-3px);
 }
+
+
 
 .thank-you-btn {
     font-size: 1rem;

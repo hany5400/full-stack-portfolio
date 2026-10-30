@@ -1186,6 +1186,15 @@ nav {
     max-width: 600px;
     margin: 0 auto;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.contact-header .badge {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contact-header .section-title {
@@ -1193,6 +1202,7 @@ nav {
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
 
 .contact-header .section-title::after {
@@ -1201,16 +1211,20 @@ nav {
 }
 
 .contact-desc {
-    margin-bottom: 35px;
+    margin: 0 auto 35px;
     font-size: 1.1rem;
     color: #64748b;
     line-height: 1.75;
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
 }
 
 .contact-cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 16px;
+    width: 100%;
 }
 
 .contact-box {
@@ -1218,8 +1232,8 @@ nav {
     color: var(--color-secondary);
     padding: 24px;
     border-radius: 12px;
-
     display: block;
+    text-align: left;
     border: 1px solid rgba(0, 0, 0, 0.04);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
 }
